@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Pedoche Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Josh Portfolio</h2>
+    <ul>
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('about')">About</a></li>
+        <li><a onclick="showPage('skills')">Skills</a></li>
+        <li><a onclick="showPage('projects')">Projects</a></li>
+        <li><a onclick="showPage('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home" class="page">
+    <img src="images/profile.jpeg" class="profile-img">
+    <h1>Josh Andre E. Pedoche</h1>
+    <p>Aspiring Web Developer</p>
+</header>
+
+<section id="about" class="page about">
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Josh Andre E. Pedoche. A 19 year old student, under the program Bachelor in Science Computer Engineer, I grew up in Catigbian, which has helped build how I see the world today.I am a curious and willing to learn individual for I want to get in on the behind the scene works of developmental projects.
+        I am passionate about web development, UI design, and software development.
+    </p>
+</section>
+
+<section id="skills" class="page skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">HTML</span>
+                <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:78%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">CSS</span>
+                <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:65%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-percent">48%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:48%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="page projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Avata Visuals</h3>
+            <p>An online website made for efficient and organized, client to customer event organization. A website dedicated to make your Wedding or any Special Event wonderfully planned and thought-through.</p>
+
+            <a href="https://avatavisuals.netlify.app/" target="_blank" class="project-btn">
+                Visit Project
+            </a>
+            <a href="https://youtu.be/tbCWi5JJ7wE" target="_blank" class="project-btn">
+                Project Video
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Godzilla Bot</h3>
+            <img src="images/godzilla.jpg" class="project-img">
+            <p>Godzilla Bot is a multi-purpose robotic project designed to showcase creativity, innovation, and the practical application of robotics. This bot was built with different functions that allow it to perform various tasks such as line following, sumo battles, hockey gameplay, and maze solving. It uses sensors, motors, and programmable controls to navigate environments, respond to obstacles, and complete specific challenges.
+The goal of this project is to explore how robotics can be used to solve problems while improving skills in programming, electronics, and system design. Godzilla Bot represents the combination of technology and creativity, showing how a single robotic platform can be adapted for different activities and competitions. Through this project, we were able to experience the process of building, testing, and improving a functional robot.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="page contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+
+        <input type="text" name="from_name" placeholder="Your Name" required>
+
+        <input type="email" name="from_email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="project-btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="status"></p>
+
+</section>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Pedoche Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Josh Portfolio</h2>
+    <ul>
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('about')">About</a></li>
+        <li><a onclick="showPage('skills')">Skills</a></li>
+        <li><a onclick="showPage('projects')">Projects</a></li>
+        <li><a onclick="showPage('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<header id="home" class="page">
+    <img src="images/profile.jpeg" class="profile-img">
+    <h1>Josh Andre E. Pedoche</h1>
+    <p>Aspiring Web Developer</p>
+</header>
+
+<section id="about" class="page about">
+    <h2>About Me</h2>
+    <p>
+        Hello! My name is Josh Andre E. Pedoche. A 19 year old student, under the program Bachelor in Science Computer Engineer, I grew up in Catigbian, which has helped build how I see the world today.I am a curious and willing to learn individual for I want to get in on the behind the scene works of developmental projects.
+        I am passionate about web development, UI design, and software development.
+    </p>
+</section>
+
+<section id="skills" class="page skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">HTML</span>
+                <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:78%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">CSS</span>
+                <span class="skill-percent">65%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:65%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-percent">48%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:48%;"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="page projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Avata Visuals</h3>
+            <p>An online website made for efficient and organized, client to customer event organization. A website dedicated to make your Wedding or any Special Event wonderfully planned and thought-through.</p>
+
+            <a href="https://avatavisuals.netlify.app/" target="_blank" class="project-btn">
+                Visit Project
+            </a>
+            <a href="https://youtu.be/tbCWi5JJ7wE" target="_blank" class="project-btn">
+                Project Video
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Godzilla Bot</h3>
+            <img src="images/godzilla.jpg" class="project-img">
+            <p>Godzilla Bot is a multi-purpose robotic project designed to showcase creativity, innovation, and the practical application of robotics. This bot was built with different functions that allow it to perform various tasks such as line following, sumo battles, hockey gameplay, and maze solving. It uses sensors, motors, and programmable controls to navigate environments, respond to obstacles, and complete specific challenges.
+The goal of this project is to explore how robotics can be used to solve problems while improving skills in programming, electronics, and system design. Godzilla Bot represents the combination of technology and creativity, showing how a single robotic platform can be adapted for different activities and competitions. Through this project, we were able to experience the process of building, testing, and improving a functional robot.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="page contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form" class="contact-form">
+
+        <input type="text" name="from_name" placeholder="Your Name" required>
+
+        <input type="email" name="from_email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="project-btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="status"></p>
+
+</section>
+
+<script>
+
+function showPage(page){
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(section => {
+        section.style.display = "none";
+    });
+    document.getElementById(page).style.display = "block";
+}
+
+function setNavHeight(){
+    const nav = document.querySelector("nav");
+    document.documentElement.style.setProperty("--nav-height", nav.offsetHeight + "px");
+}
+
+setNavHeight();
+showPage("home");
+
+window.addEventListener("load", setNavHeight);
+window.addEventListener("resize", setNavHeight);
+
+</script>
+
+<script>
+(function () {
+    emailjs.init("S0HrctI82_M30Mbdd");
+})();
+
+document.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "service_hyejnk3",
+        "template_y468ve6",
+        this
+    )
+    .then(function() {
+
+        document.getElementById("status").innerHTML =
+        "Message sent successfully!";
+
+        document.getElementById("contact-form").reset();
+
+    })
+    .catch(function(error) {
+
+        document.getElementById("status").innerHTML =
+        "Failed to send message. Please try again.";
+
+        console.log(error);
+
+    });
+
+});
+</script>
+
+</body>
+<footer>
+    <p>© 2026 Josh Andre Pedoche | Online Portfolio</p>
+</footer>
+
+<script>
+
+function showPage(page){
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(section => {
+        section.style.display = "none";
+    });
+    document.getElementById(page).style.display = "block";
+}
+
+function setNavHeight(){
+    const nav = document.querySelector("nav");
+    document.documentElement.style.setProperty("--nav-height", nav.offsetHeight + "px");
+}
+
+setNavHeight();
+showPage("home");
+
+window.addEventListener("load", setNavHeight);
+window.addEventListener("resize", setNavHeight);
+
+</script>
+
+</body>
+</html>
