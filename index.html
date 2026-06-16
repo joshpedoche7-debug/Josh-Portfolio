@@ -27,6 +27,7 @@
 </header>
 
 <section id="about" class="page about">
+     <img src="images/aboutme.jpeg" class="profile-img">
     <h2>About Me</h2>
     <p>
         Hello! My name is Josh Andre E. Pedoche. A 19 year old student, under the program Bachelor in Science Computer Engineer, I grew up in Catigbian, which has helped build how I see the world today.I am a curious and willing to learn individual for I want to get in on the behind the scene works of developmental projects.
@@ -35,6 +36,208 @@
 </section>
 
 <section id="skills" class="page skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Coding</span>
+                <span class="skill-percent">23%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:23%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Hardware</span>
+                <span class="skill-percent">35%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:35%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-percent">32%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:32%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Reporting</span>
+                <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:50%;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span class="skill-name">Adaptability</span>
+                <span class="skill-percent">30%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="--level:30%;"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <h2> Tools & Technology</h2>
+    <div class="card">
+       
+        <p> HTML, CSS, Java, Git, Web Development, Bot Development, Analysis.</p>
+    </div>
+</section>
+
+<section id="projects" class="page projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Avata Visuals</h3>
+            <p>An online website made for efficient and organized, client to customer event organization. A website dedicated to make your Wedding or any Special Event wonderfully planned and thought-through.</p>
+
+            <a href="https://avatavisuals.netlify.app/" target="_blank" class="project-btn">
+                Visit Project
+            </a>
+            <a href="https://youtu.be/tbCWi5JJ7wE" target="_blank" class="project-btn">
+                Project Video
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Godzilla Bot</h3>
+            <img src="images/godzilla.jpg" class="project-img">
+            <p>Godzilla Bot is a multi-purpose robotic project designed to showcase creativity, innovation, and the practical application of robotics. This bot was built with different functions that allow it to perform various tasks such as line following, sumo battles, hockey gameplay, and maze solving. It uses sensors, motors, and programmable controls to navigate environments, respond to obstacles, and complete specific challenges.
+The goal of this project is to explore how robotics can be used to solve problems while improving skills in programming, electronics, and system design. Godzilla Bot represents the combination of technology and creativity, showing how a single robotic platform can be adapted for different activities and competitions. Through this project, we were able to experience the process of building, testing, and improving a functional robot.</p>
+    <a href="https://youtu.be/tbCWi5JJ7wE" target="_blank" class="project-btn">
+                Project Video
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="page contact">
+    <h2>Contact</h2>
+
+    <form id="contact-form">
+
+        <input type="text" name="from_name" placeholder="Your Name" required>
+
+        <input type="email" name="from_email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="project-btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="status"></p>
+
+</section>
+
+
+<script>
+
+function showPage(page){
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(section => {
+        section.style.display = "none";
+    });
+    document.getElementById(page).style.display = "block";
+}
+
+function setNavHeight(){
+    const nav = document.querySelector("nav");
+    document.documentElement.style.setProperty("--nav-height", nav.offsetHeight + "px");
+}
+
+setNavHeight();
+showPage("home");
+
+window.addEventListener("load", setNavHeight);
+window.addEventListener("resize", setNavHeight);
+
+</script>
+
+<script>
+(function () {
+    emailjs.init("S0HrctI82_M30Mbdd");
+})();
+
+document.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "service_hyejnk3",
+        "template_y468ve6",
+        this
+    )
+    .then(function() {
+
+        document.getElementById("status").innerHTML =
+        "Message sent successfully!";
+
+        document.getElementById("contact-form").reset();
+
+    })
+    .catch(function(error) {
+
+        document.getElementById("status").innerHTML =
+        "Failed to send message. Please try again.";
+
+        console.log(error);
+
+    });
+
+});
+</script>
+
+</body>
+<footer>
+    <p>© 2026 Josh Andre Pedoche | Online Portfolio</p>
+</footer>
+
+<script>
+
+function showPage(page){
+    let pages = document.querySelectorAll(".page");
+    pages.forEach(section => {
+        section.style.display = "none";
+    });
+    document.getElementById(page).style.display = "block";
+}
+
+function setNavHeight(){
+    const nav = document.querySelector("nav");
+    document.documentElement.style.setProperty("--nav-height", nav.offsetHeight + "px");
+}
+
+setNavHeight();
+showPage("home");
+
+window.addEventListener("load", setNavHeight);
+window.addEventListener("resize", setNavHeight);
+
+</script>
+
+</body>
+</html><section id="skills" class="page skills">
     <h2>Skills</h2>
     <div class="skills-container">
 
